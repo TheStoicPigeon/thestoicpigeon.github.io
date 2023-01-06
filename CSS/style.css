@@ -1,0 +1,77 @@
+*, *::before, *::after {
+  box-sizing:border-box;
+}
+body {
+  margin:0;
+  padding:0;
+}
+
+nav {
+  background-color:#202124;
+  height:100px;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:space-evenly;
+}
+a {
+  text-decoration:none;
+  color:inherit;
+}
+
+main {
+  height:calc(100vh - 100px);
+  align-items:center;
+  justify-content:center;
+  overflow-y:hidden;
+  overflow-x:hidden;
+  position:relative;
+}
+
+.carousel{
+  display:flex;
+  position:absolute;
+  height: inherit;
+  width:400vw;
+  transition: .5s ease-in-out; 
+}
+.carousel div {
+  width:100vw;
+}
+#slide-1 img {
+  width:100%;
+  height:auto;
+}
+#slide-2 {
+}
+#slide-3 {
+}
+#slide-4 {
+}
+
+.projects {
+  display:flex;
+  flex-direction:column;
+}
+card {
+  display:flex;
+  margin:auto;
+  margin-top:20px;
+  width:75%;
+  height:300px;
+}
+
+card img {
+  width:auto;
+  height:200px;
+  background-color:white;
+  bottom:0;
+}
+.project__details {
+}
+.languages img {
+  height:40px;
+  width:auto;
+}
+
+

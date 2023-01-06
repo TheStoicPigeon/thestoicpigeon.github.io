@@ -1,23 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  </head>
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#" id="s1" data-target='1'>HOME</a>
+    <a href="#" id="s2" data-target='2'>PORTFOLIO</a>
+    <a href="#" id="s3" data-target='3'>RESUME</a>
+    <a href="#" id="s4" data-target='4'>BIO</a>
+  </nav>
+
+  <main>
+    <div class="carousel">
+      <div id="slide-1">
+        <img src="images/main.jpg" alt="">
+      </div>
+      <div id="slide-2">
+        <div class="projects">
+
+          <card class="jeopardy">
+            <img src="images/jeopardy.png" alt="jeopard project">
+            <div class="project__details">
+              <div class="languages">
+                <img src="images/javascript-original.svg" alt="javascript">
+                <img src="images/php-original.svg" alt="php">
+                <img src="images/mysql-original-wordmark.svg" alt="mysql">
+                <img src="images/html5-original.svg" alt="html">
+                <img src="IMAGES/css3-plain-wordmark.svg" alt="css">
+              </div>
+
+              <h2>Jeopardy</h2>
+              <p>A Jeopardy game using the JService API.</p>
+            </div>
+          </card>
+
+          <card class="bitter">
+            <img src="images/Signup.png" alt="bitter project">
+            <div class="project__details">
+              <h2>Bitter Social Media</h2>
+              <p>A PHP project creating a social media platform called Bitter Social Media</p>
+            </div>
+          </card>
 
 
+          <card class="project">
+          </card>
 
-  <body>
-    <h1>Profile</h1>
-  
-  </body>
+        </div>
+      </div>
+      <div id="slide-3">
+        RESUME
+      </div>
+      <div id="slide-4">
+        BIO
+      </div>
+    </div>
+  </main>
+
+</body>
 
 
 </html>
-
