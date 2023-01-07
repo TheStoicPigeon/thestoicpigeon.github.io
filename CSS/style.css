@@ -4,6 +4,7 @@
 body {
   margin:0;
   padding:0;
+  overflow-y:hidden;
 }
 
 nav {
@@ -13,6 +14,12 @@ nav {
   display:flex;
   align-items:center;
   justify-content:space-evenly;
+}
+.scrollbar {
+  height:10px;
+  width:100vw;
+  background-color:#3a4192;
+  margin-bottom:100px;
 }
 a {
   text-decoration:none;
@@ -31,7 +38,7 @@ main {
 .carousel{
   display:flex;
   position:absolute;
-  height: inherit;
+  height:max-content;
   width:400vw;
   transition: .5s ease-in-out; 
 }
@@ -42,36 +49,59 @@ main {
   width:100%;
   height:auto;
 }
-#slide-2 {
-}
-#slide-3 {
-}
-#slide-4 {
-}
 
-.projects {
-  display:flex;
-  flex-direction:column;
-}
-card {
-  display:flex;
-  margin:auto;
-  margin-top:20px;
-  width:75%;
-  height:300px;
-}
-
-card img {
-  width:auto;
-  height:200px;
+.project__img{
+  height:auto;
+  width:300px;
   background-color:white;
-  bottom:0;
 }
 .project__details {
+  width:500px!important;
 }
-.languages img {
-  height:40px;
-  width:auto;
+
+.project__languages {
+  right:0;
+  top:0;
+  width:100%!important;
+  height:inherit;
+  display:flex;
+  justify-content:end;
 }
+.project__languages img {
+  height:auto;
+  width:40px;
+  margin:5px;
+}
+
+#jeopardy__languages {
+  justify-content:end;
+}
+#bitter__languages {
+  justify-content:start;
+}
+
+.project {
+  display:flex;
+  margin-bottom:100px;
+  width:100vw;
+  justify-content:center;
+}
+
+#jeopardy_logo {
+  width:300px;
+  height:auto;
+  left:300px;
+  grid-column:2;
+  grid-row:1;
+}
+
+.project__details {
+  font-size:30px;
+}
+h2 {
+  margin-top:0;
+}
+
+
 
 

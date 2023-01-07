@@ -5,32 +5,25 @@ $(document).ready(function() {
   $('a').on("click", function() {
     let target = $(this).data('target');
 
-    currentSlide = moveSlides(currentSlide, target);
+    currentSlide = moveSlides(target);
   })
-
 })
 
-function moveSlides(currentSlide, targetSlide) {
-  console.log("in moveslides")
-  console.log('Target= ', targetSlide);
-  console.log('CurrentSlide= ', currentSlide);
 
-  if (currentSlide === targetSlide) return;
+function moveSlides(targetSlide) {
 
-  else {
-    switch (targetSlide) {
-      case 1:
-        $('.carousel').css('transform', 'translateX(0vw)');
-        break;
-      case 2:
-        $('.carousel').css('transform', 'translateX(-100vw)');
-        break;
-      case 3:
-        $('.carousel').css('transform', 'translateX(-200vw)');
-        break;
-      default:
-        $('.carousel').css('transform', 'translateX(-300vw)');
-    }
-    return targetSlide;
+  switch (targetSlide) {
+    case 1:
+      $('.carousel').css('transform', 'translateX(0vw)');
+      break;
+    case 2:
+      $('.carousel').css('transform', 'translateX(-100vw)');
+      break;
+    case 3:
+      $('.carousel').css('transform', 'translateX(-200vw)');
+      break;
+    default:
+      $('.carousel').css('transform', 'translateX(-300vw)');
   }
+  return targetSlide;
 }

@@ -18,50 +18,58 @@
   <nav>
     <a href="#" id="s1" data-target='1'>HOME</a>
     <a href="#" id="s2" data-target='2'>PORTFOLIO</a>
-    <a href="#" id="s3" data-target='3'>RESUME</a>
+    <a href="#" id="s3" data-target='3'>RESUME & CV</a>
     <a href="#" id="s4" data-target='4'>BIO</a>
   </nav>
+  <div class="scrollbar"></div>
+
+
 
   <main>
     <div class="carousel">
+
       <div id="slide-1">
         <img src="images/main.jpg" alt="">
       </div>
+
       <div id="slide-2">
         <div class="projects">
 
-          <card class="jeopardy">
-            <img src="images/jeopardy.png" alt="jeopard project">
+          <div class="project">
+            <img class="project__img" src="images/portfolio/jeopardy.png" alt="jeopard project">
             <div class="project__details">
-              <div class="languages">
-                <img src="images/javascript-original.svg" alt="javascript">
-                <img src="images/php-original.svg" alt="php">
-                <img src="images/mysql-original-wordmark.svg" alt="mysql">
-                <img src="images/html5-original.svg" alt="html">
-                <img src="IMAGES/css3-plain-wordmark.svg" alt="css">
-              </div>
-
               <h2>Jeopardy</h2>
               <p>A Jeopardy game using the JService API.</p>
+              <div class="project__languages" id="jeopardy__languages">
+                <img src="images/languages/javascript-original.svg" alt="javascript">
+                <img src="images/languages/php-original.svg" alt="php">
+                <img src="images/languages/mysql-original-wordmark.svg" alt="mysql">
+                <img src="images/languages/html5-original.svg" alt="html">
+                <img src="IMAGES/languages/css3-plain-wordmark.svg" alt="css">
+              </div>
             </div>
-          </card>
+          </div>
 
-          <card class="bitter">
-            <img src="images/Signup.png" alt="bitter project">
+          <div class="project">
             <div class="project__details">
               <h2>Bitter Social Media</h2>
               <p>A PHP project creating a social media platform called Bitter Social Media</p>
+              <div class="project__languages" id="bitter__languages">
+                <img src="images/languages/javascript-original.svg" alt="javascript">
+                <img src="images/languages/php-original.svg" alt="php">
+                <img src="images/languages/mysql-original-wordmark.svg" alt="mysql">
+                <img src="images/languages/html5-original.svg" alt="html">
+                <img src="IMAGES/languages/css3-plain-wordmark.svg" alt="css">
+              </div>
             </div>
-          </card>
-
-
-          <card class="project">
-          </card>
+            <img class="project__img" src="IMAGES/portfolio/logo-icon.svg" alt="bitter social media project">
+          </div>
 
         </div>
       </div>
+
       <div id="slide-3">
-        RESUME
+        <a href="FILES/Resume.docx" download>DOWNLOAD RESUME</a>
       </div>
       <div id="slide-4">
         BIO
